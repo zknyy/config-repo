@@ -1,9 +1,7 @@
-zuul.ignored-services: "*"
+#zuul.ignored-services: "*"
 zuul.prefix:  /api
 #on localhost without docker-compose
-zuul.routes.localhost: /organization/**
-zuul.routes.localhost: /licensing/**
-zuul.routes.localhost: /auth/**
+zuul.routes.localhost: /organization/**, /licensing/**, /auth/**
 #zuul.routes.organizationservice: /organization/**
 #zuul.routes.licensingservice: /licensing/**
 #zuul.routes.authenticationservice: /auth/**
